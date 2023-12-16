@@ -1,22 +1,34 @@
-Work in progress
+# hyprdots-sweet
 
-- [x] Gtk
-- [x] Cursors
-- [x] Icons
-- [x] sweet/cinnamon (gtk)
-- [x] sweet/metacity (gtk)
-- [x] sweet/xfwm4 (gtk)
-- [x] sweet/index.theme (gtk)
-- [ ] sweet/assets ?
-- [x] firefox
-- [x] vscode 
-    -> https://marketplace.visualstudio.com/items?itemName=EliverLara.sweet-vscode
-    -> https://marketplace.visualstudio.com/items?itemName=EliverLara.sweet-vscode-icons
-- [x] wallpapers
-- [x] sddm
-- [x] kvantum
-- [ ] .config
+An attempt to use the amazing gtk/kde sweet theme by [EliverLara](https://github.com/EliverLara) in [hyprland](https://github.com/hyprwm/Hyprland) via [hyprdots](https://github.com/prasanthrangan/hyprdots)
 
-- rofi theme is copy-paste from synthwave
-- hypr theme is copy-paste from synthwave
-- waybar theme is copy-paste from synthwave
+**Work in progress!**
+
+![example](example.png)
+
+Seems to work correctly:
+
+- gtk
+- icons
+- configs/swww
+- configs/kvantum
+
+Packaging problems:
+
+- cursors -- packaged, but theme not applied
+- firefox -- packaged, but theme not applied
+- vscode -- installable manually, but automatic install through `themepatcher.py` doesn't work ([theme](https://marketplace.visualstudio.com/items?itemName=EliverLara.sweet-vscode), [icons](https://marketplace.visualstudio.com/items?itemName=EliverLara.sweet-vscode-icons))
+- sddm -- can't confirm since I've always been using this theme with KDE Plasma and nothing changed for me with install
+- unreadable fonts (see `dolphin` for example)
+
+Incomplete:
+
+- should [sweet/assets](https://github.com/EliverLara/Sweet/tree/nova/assets) be included in gtk?
+- configs/kitty theme generated poorly
+- configs/hypr theme is (mostly) a copy-paste from synthwave
+- configs/qt5ct theme generated poorly
+- add configs/qt6ct theme?
+- configs/rofi theme is copy-paste from synthwave
+- configs/waybar theme is copy-paste from synthwave
+- more styles for different applications? Not sure if it's needed though
+- ugly tray icons (probably a waybar-specific issue)
