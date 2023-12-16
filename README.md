@@ -6,6 +6,16 @@ An attempt to use the amazing gtk/kde sweet theme by [EliverLara](https://github
 
 ![example](example.png)
 
+## Installation
+
+You'll need to clone the [hyprdots](https://github.com/prasanthrangan/hyprdots) repo first. Maybe a [hyprtdots-ctl](https://github.com/kRHYME7/Hyprdots-ctl) may useful too
+
+After that, go into `Hyprdots/Scripts` and execute the `themepatcher`:
+
+`/themepatcher.sh "Sweet" "https://github.com/gigas002/hyprdots-sweet" "EliverLara.sweet-vscode"`
+
+## Current status
+
 Seems to work correctly:
 
 - gtk
@@ -32,3 +42,5 @@ Incomplete:
 - configs/waybar theme is copy-paste from synthwave
 - more styles for different applications? Not sure if it's needed though
 - ugly tray icons (probably a waybar-specific issue)
+
+The referenced [Synth-Wave theme](https://github.com/prasanthrangan/hyprdots-mod)
