@@ -133,5 +133,5 @@ tar -Jcf $Source/arcs/Cursor_Sweet-cursors.tar.xz -C Sweet-cursors .
 rm -f $Source/arcs/Sddm_Sweet.tar.xz
 tar -Jcf $Source/arcs/Sddm_Sweet.tar.xz Sddm_Sweet --transform s/Sddm_Sweet/Sweet/
 
-rm -f $Source/arcs/Firefox_Sweet-cursors.tar.xz
-tar -Jcf $Source/arcs/Firefox_Sweet-cursors.tar.xz -C Firefox_Sweet .
+rm -f $Source/arcs/Firefox_Sweet.tar.xz
+tar -Jcf $Source/arcs/Firefox_Sweet.tar.xz -C Firefox_Sweet .
