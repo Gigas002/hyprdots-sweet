@@ -31,6 +31,7 @@ cp -r $src/Sweet/gtk-4.0 $Source/$gtk_theme_name/gtk-4.0
 cp -r $src/Sweet/metacity-1 $Source/$gtk_theme_name/metacity-1
 cp -r $src/Sweet/xfwm4 $Source/$gtk_theme_name/xfwm4
 cp -f $src/Sweet/index.theme $Source/$gtk_theme_name/index.theme
+cp -r $src/Sweet/assets $Source/$gtk_theme_name/assets
 
 # Icons
 rm -rf $Source/candy-icons && mkdir -p $Source/candy-icons
