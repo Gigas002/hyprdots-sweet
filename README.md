@@ -22,6 +22,7 @@ Seems to work correctly:
 - icons
 - configs/swww
 - configs/kvantum
+- kitty theme
 
 Packaging problems:
 
@@ -33,8 +34,6 @@ Packaging problems:
 
 Incomplete:
 
-- should [sweet/assets](https://github.com/EliverLara/Sweet/tree/nova/assets) be included in gtk?
-- configs/kitty theme generated poorly
 - configs/hypr theme is (mostly) a copy-paste from synthwave
 - configs/qt5ct theme generated poorly
 - add configs/qt6ct theme?
