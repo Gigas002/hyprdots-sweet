@@ -43,5 +43,5 @@ Packaging problems:
 Incomplete:
 
 - configs/qt5ct and qt6ct theme is a copy-paste from synthwave
-- ugly tray icons (probably a waybar-specific issue)
+- ~~ugly tray icons~~
 - splashscreen if possible (probably need filing issue to `hyprland` or `hyprdots` if it's not)
