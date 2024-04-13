@@ -1,3 +1,5 @@
+$HOME/.config/waybar/theme.css|killall -SIGUSR2 waybar␍
+
 @define-color bar-bg rgba(0, 0, 0, 0);
 
 @define-color main-bg #161925;
