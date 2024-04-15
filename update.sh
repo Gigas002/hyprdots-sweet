@@ -4,7 +4,7 @@
 repo_root=$PWD
 src=$PWD/src
 Source=$PWD/Source
-config=$PWD/Configs/.config
+config=$PWD/Configs/.config/hyde/themes/Sweet
 
 # Get updated repos
 rm -rf $src
@@ -47,29 +47,31 @@ cp -r $src/Sweet/kde/cursors/Sweet-cursors $Source/Sweet-cursors
 
 
 # Wallpapers
-rm -rf $config/swww/Sweet && mkdir -p $config/swww/Sweet
-cp -r $src/Sweet/extras/Sweet-Wallpapers/* $config/swww/Sweet
+rm -rf $config/wallpapers && mkdir -p $config/wallpapers
+cp -r $src/Sweet/extras/Sweet-Wallpapers/* $config/wallpapers
+rm $config/wallpapers/source.svg
 
 
 # Kvantum
-rm -rf $config/Kvantum/Sweet && mkdir -p $config/Kvantum/Sweet
-cp -r $src/Sweet/kde/Kvantum/Sweet/* $config/Kvantum/Sweet
-rm -rf $config/Kvantum/Sweet-transparent-toolbar && mkdir -p $config/Kvantum/Sweet-transparent-toolbar
-cp -r $src/Sweet/kde/Kvantum/Sweet-transparent-toolbar/* $config/Kvantum/Sweet-transparent-toolbar
+rm -rf $config/kvantum && mkdir -p $config/kvantum
+cp -r $src/Sweet/kde/Kvantum/Sweet/* $config/kvantum
+mv $config/kvantum/Sweet.kvconfig $config/kvantum/kvconfig.theme
+{ echo '$HOME/.config/Kvantum/wallbash/wallbash.kvconfig'; cat $config/kvantum/kvconfig.theme; } > temp && mv temp $config/kvantum/kvconfig.theme
+mv $config/kvantum/Sweet.svg $config/kvantum/kvantum.theme
+{ echo '$HOME/.config/Kvantum/wallbash/wallbash.svg'; cat $config/kvantum/kvantum.theme; } > temp && mv temp $config/kvantum/kvantum.theme
 
 
 # Make archives
 
 mkdir -p $Source/arcs && cd $Source
 
-rm -f $Source/arcs/Gtk_$gtk_theme_name.tar.xz
-tar -Jcf $Source/arcs/Gtk_$gtk_theme_name.tar.xz $gtk_theme_name
+rm -f $Source/arcs/Gtk_$gtk_theme_name.tar.gz
+tar -cf $Source/arcs/Gtk_$gtk_theme_name.tar.gz $gtk_theme_name
 
-rm -f $Source/arcs/Icon_candy-icons.tar.xz
-tar -Jcf $Source/arcs/Icon_candy-icons.tar.xz -C candy-icons .
+rm -f $Source/arcs/Icon_candy-icons.tar.gz && cd candy-icons
+tar -cf $Source/arcs/Icon_candy-icons.tar.gz candy-icons && cd $Source
+rm -f $Source/arcs/Icon_Sweet-Rainbow.tar.gz && cd Sweet-Rainbow
+tar -Jcf $Source/arcs/Icon_Sweet-Rainbow.tar.gz Sweet-Rainbow && cd $Source
 
-rm -f $Source/arcs/Icon_Sweet-Rainbow.tar.xz
-tar -Jcf $Source/arcs/Icon_Sweet-Rainbow.tar.xz -C Sweet-Rainbow .
-
-rm -f $Source/arcs/Cursor_Sweet-cursors.tar.xz
-tar -Jcf $Source/arcs/Cursor_Sweet-cursors.tar.xz -C Sweet-cursors .
+rm -f $Source/arcs/Cursor_Sweet-cursors.tar.gz && cd Sweet-cursors
+tar -Jcf $Source/arcs/Cursor_Sweet-cursors.tar.gz Sweet-cursors && cd $Source
