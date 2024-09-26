@@ -1,3 +1,8 @@
+# deprecation notice
+
+I gave up on hyprdots/hyde several months ago, so this project is not developed any more. Probably the theme will work with minor tweaks, see `hyde` branch for my latest attempts.
+To use sweet theme with different apps, prefer looking at my [awesome-sweet](https://github.com/Gigas002/awesome-sweet)
+
 # hyprdots-sweet
 
 An attempt to use the amazing gtk/kde sweet theme by [EliverLara](https://github.com/EliverLara) in [hyprland](https://github.com/hyprwm/Hyprland) via [hyprdots](https://github.com/prasanthrangan/hyprdots)
